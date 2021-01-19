@@ -1,3 +1,30 @@
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+from time import perf_counter
+
+
+from sklearn.neural_network import MLPClassifier
+
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import confusion_matrix, plot_confusion_matrix
+from sklearn.metrics import accuracy_score
+
+import tensorflow as tf
+from tensorflow import keras
+from mlxtend.frequent_patterns import apriori, association_rules
+
+
+
+
 
 df= pd.read_csv("Telco-customer-churn.csv")
 del df["customerID"]  #usuwam ID
